@@ -6,6 +6,11 @@ sensitivity_x = 5
 smoothing_factor = 1.0
 rotate_camera = True
 
+# Enhanced tracking parameters for better stability
+temporal_smoothing_enabled = True
+tracking_quality_threshold = 0.5  # Minimum ratio of successfully tracked points
+max_displacement_per_frame = 50   # Maximum allowed displacement to prevent jumps
+
 # Initialize face tracking parameters
 initial_face_x = None
 initial_face_y = None
